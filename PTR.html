@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Simple Interest</title>        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            background-image: url("bg10.jpg");
+            
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .back{
+            padding-top: 50px;
+            background-color: black; 
+            width:fit-content;
+            align-content: center;
+        }
+    </style>
+    <body>
+        <div class="container text-center " style="padding-top: 80px;">
+            <div class="jumbotron mt-5 back">
+                <p class="text-center" style="color: white; font-size: 25px;"><b>Simple Interest Calculator</b></p>
+                <div class="form-group">                
+                    <form onsubmit="return interest()">                        
+                        <input type="text" id="pri" class="form-control mt-3 d-md-inline-flex" placeholder="Enter principal" required>
+                        <input type="text" id="rate" class="form-control mt-3" placeholder="Enter Rate of Interest"  required>
+                        <input type="text" id="time" class="form-control mt-3" placeholder="Enter Time period in years"  required>
+                        <button type="submit" class="btn btn-info mt-4" >Check</button>
+                        <div class="text-center text-light mt-4">
+                            <p id="result"></p>
+                        </div>
+                    </form>
+                    <script src="./ptr.js"> 
+
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
