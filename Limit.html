@@ -1,0 +1,52 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Even/Odd Number</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            background-image: url("Images/47c5ad1cf237848af9fc1db8cf0772a1.gif");            
+            background-position:inherit;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .back{
+            align-items: center;
+            background-color: black; 
+            width: fit-content;
+            margin-left: 350px;
+        }
+        
+    </style>
+    <body>
+        
+        <div class="container mt-5 text-center">
+            <div class="jumbotron mt-5 back ">
+                <p class="text-center" style="color: white; font-size: 25px;"><b>Even/Odd Numbers</b></p>
+              <div class="form-group">                
+                    <form onsubmit="even()">                        
+                        <input type="text" id="low" class="form-control mt-4 " placeholder="Enter Lower limit" required>
+                        <input type="text" id="up" class="form-control mt-4 " placeholder="Enter Upper limit"  required>
+                        <button type="submit" class="btn btn-info mt-4" onclick="return even()">Even Numbers</button>
+                        <button type="submit" class="btn btn-info mt-4 ml-3" onclick="return odd()">Odd Numbers</button>
+                        <div class=" text-light mt-4 " style="font-family: 'Courier New', Courier, monospace; font-weight: bolder;">
+                            <p id="result"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+        
+        <script src="./limit.js">
+            
+        </script>
+    </body>
+</html>
