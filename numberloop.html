@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Even/Odd Numbers in an Array</title>
+    </head>
+    <body>
+        <h2>Even/Odd Numbers in an Array</h2>
+        <script>
+            var marks=[];
+            var evencount=0;
+            var oddcount=0;
+            var num=parseInt(prompt('Enter array size'));
+            for(var i=0;i<num;i++)
+            {
+                marks[i]=parseInt(prompt('Enter marks '+(i+1)));
+            }
+            console.log('Even Numbers');
+            for(var i=0;i<marks.length;i++)
+            {
+                if(marks[i]%2==0)
+                {
+                    console.log(marks[i]);
+                    evencount++;
+                }
+            }
+            console.log('Even count: '+evencount);
+            console.log('Odd Numbers');
+            for(var i=0;i<marks.length;i++)
+            {
+                if(!(marks[i]%2==0))
+                {
+                    console.log(marks[i]);
+                    oddcount++;
+                }
+            }
+            console.log('Odd count: '+oddcount);
+        </script>
+    </body>
+</html>
